@@ -1,0 +1,17 @@
+# portable Python runtime bundled for the "copy the folder" release (3 GB)
+runtime/
+.venv/
+__pycache__/
+*.pyc
+
+# model weights (1.5 GB) - download with tools/download_model.ps1
+models/
+
+# local config, contains the DeepSeek API key
+config.json
+
+# transcripts, logs, dumped audio
+output/
+
+.DS_Store
+Thumbs.db

@@ -1,0 +1,28 @@
+# 直接从测试用的便携运行时 `pip freeze` 里挑出的直接依赖。
+# 完整版本见文末注释：如果需要逐包锁定，用 `pip freeze > requirements-lock.txt`。
+
+# ---- 语音识别 ----
+faster-whisper==1.2.1
+ctranslate2==4.8.4
+
+# ---- VAD（Silero）----
+onnxruntime==1.31.1
+
+# ---- 音频 ----
+sounddevice==0.5.6
+SoundCard==0.4.6
+numpy==2.5.4
+
+# ---- 界面 ----
+PySide6==6.12.0
+
+# ---- 翻译（流式 HTTP）----
+httpx==0.28.1
+
+# ---- 全局快捷键 ----
+pynput==1.8.2
+
+# ---- NVIDIA GPU（可选）----
+# 有 N 卡时装上，ctranslate2 才能用 CUDA；不装会自动退回 CPU（能跑但慢）。
+# nvidia-cublas-cu12==12.9.2.10
+# nvidia-cudnn-cu12==9.27.0.42
