@@ -1,5 +1,4 @@
-# 直接从测试用的便携运行时 `pip freeze` 里挑出的直接依赖。
-# 完整版本见文末注释：如果需要逐包锁定，用 `pip freeze > requirements-lock.txt`。
+# 与开发环境验证过的版本保持一致；需要逐包锁定的话，用 `pip freeze > requirements-lock.txt`。
 
 # ---- 语音识别 ----
 faster-whisper==1.2.1
